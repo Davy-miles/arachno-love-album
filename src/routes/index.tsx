@@ -3,6 +3,8 @@ import { LoveCounter } from "@/components/LoveCounter";
 import { PhotoAlbum } from "@/components/PhotoAlbum";
 import cidade from "@/assets/cidade.jpg";
 import coracao from "@/assets/coracao-aranha.jpg.asset.json";
+import pizzaria from "@/assets/pizzaria.jpg.asset.json";
+
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -139,19 +141,27 @@ function Index() {
               aria-hidden
               className="absolute left-1/2 top-0 h-16 w-px -translate-y-full bg-foreground/40"
             />
-            <div className="animate-swing panel halftone rounded-xl p-4">
+            <div className="animate-swing panel halftone rounded-xl p-4 shadow-[var(--shadow-glow),var(--shadow-comic)]">
               <img
-                src={coracao.url}
-                alt="Máscara do Homem-Aranha e da Mulher-Aranha formando um coração"
-                width={800}
-                height={880}
-                className="w-full rounded-lg"
+                src={pizzaria.url}
+                alt="Nós dois juntos numa noite especial"
+                width={720}
+                height={540}
+                className="w-full rounded-lg object-cover"
               />
               <p className="mt-3 text-center font-hand text-2xl text-gwen">
                 metade eu, metade você
               </p>
             </div>
+            <img
+              src={coracao.url}
+              alt="Coração metade Miles, metade Gwen"
+              width={120}
+              height={120}
+              className="absolute -bottom-6 -left-6 h-24 w-24 rotate-[-8deg] rounded-full border-[3px] border-ink object-cover shadow-[var(--shadow-comic)]"
+            />
           </div>
+
         </div>
       </section>
 
