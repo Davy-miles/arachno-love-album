@@ -3,6 +3,8 @@ import { LoveCounter } from "@/components/LoveCounter";
 import { PhotoAlbum } from "@/components/PhotoAlbum";
 import cidade from "@/assets/cidade.jpg";
 import coracao from "@/assets/coracao-aranha.jpg.asset.json";
+import pizzaria from "@/assets/pizzaria.jpg.asset.json";
+
 
 export const Route = createFileRoute("/")({
   head: () => ({
