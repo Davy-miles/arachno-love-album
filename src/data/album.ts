@@ -37,7 +37,7 @@ export const album: AlbumPhoto[] = [
   {
     id: "4",
     titulo: "Na pizzaria",
-    legenda: "Nossa mesa favorita da multiverso inteiro.",
+    legenda: "Nossa mesa favorita do multiverso inteiro.",
     span: "wide",
   },
   {
